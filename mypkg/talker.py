@@ -19,7 +19,5 @@ class Talker():
 rclpy.init()
 node = Node("talker")
 talker = Talker(node)       #この一行でパブリッシャが動き出す。
-for i in range(216):
-    rclpy.spin_once(node, timeout_sec=1.0)
-    time.sleep(1.0)
+rclpy.spin(node)
 

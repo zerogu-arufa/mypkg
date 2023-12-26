@@ -10,7 +10,7 @@ def cb(msg):
 rclpy.init()
 node = Node("listener")
 pub = node.create_subscription(Int16, "countup", cb, 10)
-for i in range(216):
-        rclpy.spin_once(node, timeout_sec=1.0)
-        time.sleep(1.0)
+for i in range(11):
+    rclpy.spin_once(node, timeout_sec=1.0)
+    time.sleep(1.0)
 
