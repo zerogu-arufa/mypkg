@@ -3,14 +3,22 @@ import time
 from rclpy.node import Node
 from std_msgs.msg import Int16
 
-def cb(msg):
-    global node
-    node.get_logger().info("Listen: %d" % msg.data)
+class Listener(Node):
+    def __init__(self):
+        super().__init__("listener")
+        self.pub = self.create_subscription(Int16, "countup", self.cb, 10)
 
-rclpy.init()
-node = Node("listener")
-pub = node.create_subscription(Int16, "countup", cb, 10)
-for i in range(11):
-    rclpy.spin_once(node, timeout_sec=1.0)
+    def cb(self, msg):
+        self.get_logger().info("Listen: %d" % msg.data)
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = Listener()
     time.sleep(1.0)
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()
 
