@@ -7,13 +7,13 @@ from std_msgs.msg import Int16
 class Listener(Node):
     def __init__(self):
         super().__init__("listener")
-        self.count = 20  # ここを希望のカウント数に変更する
+        self.count = None  # ここを希望のカウント数に変更する
         self.pub = self.create_subscription(Int16, "countup", self.cb, 10)
 
     def cb(self, msg):
+        self.count = msg.data  # 受信したメッセージをカウントに設定
         self.get_logger().info("Listen: %d" % msg.data)
-        self.count -= 1
-        if self.count < 0:
+        if self.count <= 0:
             rclpy.shutdown()
 
 def main(args=None):
