@@ -13,13 +13,13 @@ $ chmod +x mypkg
 ```
 # コマンドの使い方
 ## 2つのターミナルで処理を行う場合
-* talker側のコマンド
+* talker側のコマンド(1つ目のターミナル)
 ```
 $ cd mypkg　　　　　　　　　　　　                        #mypkgというディレクトリに移動
 $ ros2 run mypkg talker                                   #talkerノードを実行するコマンド。
    (こちら側では何も表示されない）
 ```
-* listener側のコマンド
+* listener側のコマンド(2つ目のターミナル)
 ```
  $ ros2 run mypkg listener                                #listenerノードを実行するコマンド
    [INFO] [1672472619.983395319] [listener]: Listen: 12
@@ -32,7 +32,7 @@ $ ros2 run mypkg talker                                   #talkerノードを実
 　 [INFO] [1672472619.983395319] [listener]: Listen: 20
    [INFO] [1672472620.474658465] [listener]: Listen: 19   #希望の計測時間からカウントが始まる
 ```
-##　計測時間の変更の仕方
+## 計測時間の変更の仕方
 ```
 $ cd mypkg
 $ vi talker.py
