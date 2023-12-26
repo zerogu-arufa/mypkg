@@ -3,7 +3,7 @@
 ![test](https://github.com/zerogu-arufa/mypkg/actions/workflows/test.yml/badge.svg)
 
 ## 行える処理
-このプログラムは希望の計測時間を入力し、talker.pyを実行する事でカウントが始まり、<br/>
+* このプログラムは希望の計測時間を入力し、talker.pyを実行する事でカウントが始まり、<br/>
 listener.pyを通じて計測時間終了までの残り時間を見る事が出来ます。
 # インストール方法
 ```
@@ -37,7 +37,7 @@ $ ros2 run mypkg talker                                   #talkerノードを実
 $ cd mypkg
 $ vi talker.py
 ```
-上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20秒)を変更して下さい
+* 上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20秒)を変更して下さい
 
 ## テスト環境
 * Ubuntu2204.2.33.0
