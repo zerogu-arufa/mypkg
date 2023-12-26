@@ -12,7 +12,7 @@ $ cd mypkg
 $ chmod +x mypkg
 ```
 # コマンドの使い方
-##2つのターミナルで処理を行う場合
+## 2つのターミナルで処理を行う場合
 * talker側のコマンド
 ```
 $ cd mypkg　　　　　　　　　　　　                        #mypkg内のmypkgというディレクトリに移動
@@ -25,7 +25,7 @@ $ ros2 run mypkg talker                                   #talkerノードを実
    [INFO] [1672472619.983395319] [listener]: Listen: 20
    [INFO] [1672472620.474658465] [listener]: Listen: 19   #希望の計測時間(初期は20秒)からカウントが始まる
 ```
-##1つのターミナルで処理を行う場合
+## 1つのターミナルで処理を行う場合
 ```
  $ cd launch                                              #launchというディレクトリに移動する。
  $ ros2 launch mypkg talk_listen.launch.py                #launchファイルを実行するコマンドで、talkerとlistenerの2つのノードが同時に立ち上がる。   
