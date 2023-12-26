@@ -5,7 +5,8 @@
 ## 行える処理
 このプログラムは最初に希望の計測時間を入力する事でtalker.pyを実行する事でカウントが始まり、<br/>
 listener.pyを通じて計測時間終了までの残り時間を見る事が出来ます。
-
+## インストール方法
+$ git clone git@github.com:zerogu-arufa/mypkg.git
 ## テスト環境
 * Ubuntu 22.04
 
