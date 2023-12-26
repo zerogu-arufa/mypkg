@@ -7,7 +7,7 @@ from std_msgs.msg import Int16
 class Listener(Node):
     def __init__(self):
         super().__init__("listener")
-        self.count = 20  # count属性を追加
+        self.count = 20  # ここを希望のカウント数に変更する
         self.pub = self.create_subscription(Int16, "countup", self.cb, 10)
 
     def cb(self, msg):
