@@ -22,16 +22,22 @@ $ ros2 run mypkg talker                                   #talkerノードを実
 * listener側のコマンド
 ```
  $ ros2 run mypkg listener                                #listenerノードを実行するコマンド
-   [INFO] [1672472619.983395319] [listener]: Listen: 20
-   [INFO] [1672472620.474658465] [listener]: Listen: 19   #希望の計測時間(初期は20秒)からカウントが始まる
+   [INFO] [1672472619.983395319] [listener]: Listen: 12
+   [INFO] [1672472620.474658465] [listener]: Listen: 11   #カウントはtalkerのコマンド実行時点から始まっているので注意してください
 ```
 ## 1つのターミナルで処理を行う場合
 ```
  $ cd launch                                              #launchというディレクトリに移動する。
  $ ros2 launch mypkg talk_listen.launch.py                #talkerとlistenerの2つのノードが同時に立ち上がる。   
 　 [INFO] [1672472619.983395319] [listener]: Listen: 20
-   [INFO] [1672472620.474658465] [listener]: Listen: 19   #希望の計測時間(初期は20秒)からカウントが始まる
+   [INFO] [1672472620.474658465] [listener]: Listen: 19   #希望の計測時間からカウントが始まる
 ```
+##　計測時間の変更の仕方
+```
+$ cd mypkg
+$ vi talker.py
+```
+上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20秒)を変更して下さい
 ## テスト環境
 * Ubuntu2204.2.33.0
 
