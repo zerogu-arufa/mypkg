@@ -7,14 +7,14 @@ from std_msgs.msg import Int16   #通信の型（16ビットの符号付き整�
 class Talker():
     def __init__(self,nh):
         self.pub = nh.create_publisher(Int16, "countup", 10)   
-        self.n = 0
+        self.n = 20
         nh.create_timer(1.0,self.cb)  #タイマー設定
 
     def cb(self):       
         msg = Int16()
         msg.data = self.n
         self.pub.publish(msg)
-        self.n += 1
+        self.n -= 1
 
 def main():
     rclpy.init()
