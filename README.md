@@ -15,7 +15,6 @@ $ chmod +x mypkg
 ## 2つのターミナルで処理を行う場合
 * talker側のコマンド(1つ目のターミナル)
 ```
-$ cd mypkg　　　　　　　　　　　　                        #mypkgというディレクトリに移動
 $ ros2 run mypkg talker                                   #talkerノードを実行するコマンド。
    (こちら側では何も表示されない）
 ```
@@ -27,7 +26,6 @@ $ ros2 run mypkg talker                                   #talkerノードを実
 ```
 ## 1つのターミナルで処理を行う場合
 ```
- $ cd launch                                              #launchというディレクトリに移動する。
  $ ros2 launch mypkg talk_listen.launch.py                #talkerとlistenerの2つのノードが同時に立ち上がる。   
 　 [INFO] [1672472619.983395319] [listener]: Listen: 20
    [INFO] [1672472620.474658465] [listener]: Listen: 19   #希望の計測時間からカウントが始まる
@@ -37,14 +35,15 @@ $ ros2 run mypkg talker                                   #talkerノードを実
 $ cd mypkg
 $ vi talker.py
 ```
-* 上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20秒)を変更して下さい
+* 上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20)を変更して下さい
 
 ## テスト環境
-* Ubuntu2204.2.33.0
+* Ubuntu22.04.2.33.0
 
 ## 必要なソフトウェア
-* ROSのパージョン：ROS2
-
+* python
+* Ubuntu22.04
+  * ROS2 humble
 # プログラムの説明
 * このプログラムではtalker.py(パブリッシャー)が/countup(トピック)を通してInt16型のメッセージを送信し、listener.py(サブスクライバー)でそのメッセージを受け取り、メッセージを表示します。<br/>
 talk_listen.launch.pyではこの処理を１つのターミナルで行います。

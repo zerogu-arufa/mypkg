@@ -1,3 +1,6 @@
+#SPDX-FileCopyrightText: 2023  Tateuchi Naoya
+#SPDX-License-Identifier: BSD-3-Clause
+
 import rclpy                     #ROS 2のクライアントのためのライブラリ
 import time
 from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
