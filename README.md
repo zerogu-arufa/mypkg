@@ -39,7 +39,7 @@ $ vi talker.py
 * 上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20)を変更して下さい
 
 ## テスト環境
-* Ubuntu22.04
+* Ubuntu22.04<br/>
 なお、以下のコンテナを使用しました。
   * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 ## 必要なソフトウェア
