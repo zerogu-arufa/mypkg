@@ -39,8 +39,9 @@ $ vi talker.py
 * 上記入力後、「#ここを希望のカウント数に変更する」と記載されている部分の数(初期は20)を変更して下さい
 
 ## テスト環境
-* Ubuntu22.04.2.33.0
-
+* Ubuntu22.04
+なお、以下のコンテナを使用しました。
+ * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 ## 必要なソフトウェア
 * python
 * Ubuntu22.04
@@ -50,5 +51,5 @@ talk_listen.launch.pyではこの処理を１つのターミナルで行いま�
 ## ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
 * このパッケージのコードの一部やテストの為に使用しているコンテナは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て使用したものです。
-* [ryuichiueda/mypkg](https://github.com/ryuichiueda/mypkg)
+ * [ryuichiueda/mypkg](https://github.com/ryuichiueda/mypkg)
 * © 2023 Tateuchi Naoya
