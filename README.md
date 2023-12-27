@@ -40,7 +40,7 @@ $ vi talker.py
 
 ## テスト環境
 * Ubuntu22.04<br/>
-なお、以下のコンテナを使用しました。
+* なお、以下のコンテナを使用しました。
   * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 ## 必要なソフトウェア
 * python
