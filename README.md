@@ -49,6 +49,6 @@ $ vi talker.py
 talk_listen.launch.pyではこの処理を１つのターミナルで行います。
 ## ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
-* このパッケージのコードの一部やテストの為に使用しているコンテナは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作にしたものです。
+* このパッケージのコードの一部やテストの為に使用しているコンテナは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て使用したものです。
 * [ryuichiueda/mypkg](https://github.com/ryuichiueda/mypkg)
 * © 2023 Tateuchi Naoya
