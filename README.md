@@ -43,7 +43,6 @@ $ vi talker.py
 ## 必要なソフトウェア
 * python
 * Ubuntu22.04
-  * ROS2 humble
 # プログラムの説明
 * このプログラムではtalker.py(パブリッシャー)が/countup(トピック)を通してInt16型のメッセージを送信し、listener.py(サブスクライバー)でそのメッセージを受け取り、メッセージを表示します。<br/>
 talk_listen.launch.pyではこの処理を１つのターミナルで行います。
