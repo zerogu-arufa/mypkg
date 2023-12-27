@@ -48,5 +48,7 @@ $ vi talker.py
 * このプログラムではtalker.py(パブリッシャー)が/countup(トピック)を通してInt16型のメッセージを送信し、listener.py(サブスクライバー)でそのメッセージを受け取り、メッセージを表示します。<br/>
 talk_listen.launch.pyではこの処理を１つのターミナルで行います。
 ## ライセンス
-* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます
+* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
+* このパッケージのコードの一部やテストの為に使用しているコンテナは下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作にしたものです。
+* [ryuichiueda/mypkg](https://github.com/ryuichiueda/mypkg)
 * © 2023 Tateuchi Naoya
